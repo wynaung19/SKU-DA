@@ -24,5 +24,11 @@
     <ClCompile Include="3_find_max.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="4_array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="5_struct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
