@@ -30,5 +30,17 @@
     <ClCompile Include="5_struct.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="6_stack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="7_stack_2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="8_pre_post.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="9_match.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

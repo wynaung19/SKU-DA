@@ -132,6 +132,10 @@
     <ClCompile Include="3_find_max.c" />
     <ClCompile Include="4_array.c" />
     <ClCompile Include="5_struct.c" />
+    <ClCompile Include="6_stack.c" />
+    <ClCompile Include="7_stack_2.c" />
+    <ClCompile Include="8_pre_post.c" />
+    <ClCompile Include="9_match.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
