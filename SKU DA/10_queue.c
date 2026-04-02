@@ -1,7 +1,7 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //
-//#define MAX_QUEUE_SIZE 100
+//#define MAX_QUEUE_SIZE 20
 //typedef int Element;
 //
 //Element data[MAX_QUEUE_SIZE];
@@ -22,7 +22,8 @@
 //void enqueue(Element val) {
 //    if (is_full()) {
 //        printf("Queue Overflow!\n");
-//        return;
+//        exit(1);
+//        //return;
 //    }
 //    rear = (rear + 1) % MAX_QUEUE_SIZE;
 //    data[rear] = val;
@@ -63,12 +64,12 @@
 //    printf("20251310 Wai Yan Naung\n\n");
 //    init_queue();
 //
-//    for (int i = 1; i <= 9; i++)
+//    for (int i = 1; i <= 19; i++)
 //        enqueue(i);
 //
 //    print_queue();
 //
-//    for (int i = 0; i < 4; i++)
+//    for (int i = 0; i < 24; i++)
 //        printf("Dequeue: %d\n", dequeue());
 //
 //    print_queue();
