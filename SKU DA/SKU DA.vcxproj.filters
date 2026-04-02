@@ -42,5 +42,14 @@
     <ClCompile Include="9_match.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="10_queue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="11_deque.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="12_3_5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
