@@ -130,6 +130,9 @@
     <ClCompile Include="10_queue.c" />
     <ClCompile Include="11_deque.c" />
     <ClCompile Include="12_3_5.c" />
+    <ClCompile Include="13_Map.c" />
+    <ClCompile Include="14_linkedList.c" />
+    <ClCompile Include="15_linkedQueue.c" />
     <ClCompile Include="1_intro.c" />
     <ClCompile Include="2_duration.c" />
     <ClCompile Include="3_find_max.c" />
@@ -139,6 +142,7 @@
     <ClCompile Include="7_stack_2.c" />
     <ClCompile Include="8_pre_post.c" />
     <ClCompile Include="9_match.c" />
+    <ClCompile Include="Test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
