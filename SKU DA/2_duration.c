@@ -25,6 +25,7 @@
 //	d2 = (double)(f2 - s2) / CLOCKS_PER_SEC;
 //	duration = (double)(finish - start) / CLOCKS_PER_SEC;
 //	printf("\n1 is %f sec\n", duration);
+//	printf("\n%d\n", CLOCKS_PER_SEC);
 //	printf("\n2 is %f sec\n", d2);
 //	return 0;
 //}

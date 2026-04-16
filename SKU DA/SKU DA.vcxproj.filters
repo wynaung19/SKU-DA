@@ -63,5 +63,8 @@
     <ClCompile Include="Test.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="16_4_NO10.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
