@@ -1,41 +1,106 @@
-//#include <stdio.h>
-//#include <stdlib.h>
-//
-//typedef struct node {
-//	int data;
-//	struct node *link;
-//}Node;
-//
-//Node* input(int val) {
-//	Node* p = (Node*)malloc(sizeof(int));
-//	p->data = val;
-//	p->link = NULL;
-//	return p;
-//}
-//
-//int main(void) {
-//	printf("20251310_WaiYanNaung\n\n");
-//	//int* pi = (int*)malloc(sizeof(int) * 2);
-//	//pi[0] = 10;
-//	//pi[1] = 4;
-//	//printf("%d , %d\n", pi[0], pi[1]);
-//	//*pi = 11; // same as pi[0] = ...;
-//	//*(pi + 1) = 14;
-//	//printf("%d , %d\n", pi[0], pi[1]);
-//
-//	/*Node* p = (Node*)malloc(sizeof(int));
-//	Node* p1 = (Node*)malloc(sizeof(int));
-//
-//	p->data = 10;
-//	p->link = p1;
-//	printf("0 %d %0x %0x\n", p->data, p->link,p1);
-//
-//	p1->data = 20;
-//	p1->link = NULL;
-//	printf("1 %d %0x\n", p1->data, p1->link);*/
-//
-//	Node* re;
-//	re = input(1);
-//	printf("%d %0x", re->data, re->link);
-//	return 0;
-//}
+#include <stdio.h>
+
+// -------- 6.12 --------
+typedef struct Node {
+	int data;
+	struct Node* link;
+} Node;
+
+Node* reverse(Node * list) {
+	Node* p = list; Node* q = NULL; Node* r;
+	while (p != NULL) {
+		r = q; q = p; p = p->link; q->link = r;
+	}
+	return q;
+}
+
+int main() {
+	printf("20251310_WaiYanNaung\n\n");
+	Node n1 = { 5, NULL };
+	Node n2 = { 6, NULL };
+	Node n3 = { 7, NULL };
+	n1.link = &n2;
+	n2.link = &n3;
+	printf("Original linked list: %d -> %d -> %d\n", n1.data, n2.data, n3.data);
+	Node* reversed_list = reverse(&n1);
+	printf("Reversed linked list: %d -> %d -> %d\n", reversed_list->data, reversed_list->link->data, reversed_list->link->link->data);
+	return 0;
+}
+
+// -------- 6.10 --------
+typedef struct Node {
+	int data;
+	struct Node* link;
+} Node;
+
+int count(Node* list, int value) {
+	int count = 0;
+	for (Node* p = list; p != NULL; p = p->link) {
+		if (p->data == value) {
+			count++;
+		}
+	}
+	return count;
+}
+
+int main() {
+	printf("20251310_WaiYanNaung\n\n");
+	Node n1 = { 5, NULL };
+	Node n2 = { 5, NULL };
+	Node n3 = { 7, NULL };
+	n1.link = &n2;
+	n2.link = &n3;
+	printf("Linked list: %d -> %d -> %d\n", n1.data, n2.data, n3.data);
+	int value_to_count;
+	printf("Enter value to count: ");
+	scanf("%d", &value_to_count);
+	int result = count(&n1, value_to_count);
+	printf("Count of %d in linked list: %d\n", value_to_count, result);
+	return 0;
+}
+
+// -------- 6.9 --------
+typedef struct Node {
+	int data;
+	struct Node* link;
+} Node;
+
+int sum(Node* list) {
+	int total = 0;
+	for (Node* p = list; p != NULL; p = p->link) {
+		total += p->data;
+	}
+	return total;
+}
+
+int main() {
+	printf("20251310_WaiYanNaung\n\n");
+	Node n1 = { 5, NULL };
+	Node n2 = { 6, NULL };
+	Node n3 = { 7, NULL };
+	n1.link = &n2;
+	n2.link = &n3;
+	printf("Linked list: %d -> %d -> %d\n", n1.data, n2.data, n3.data);
+	int result = sum(&n1);
+	printf("Sum of linked list: %d\n", result);
+	return 0;
+}
+
+// -------- 6.4 --------
+void swap(int* px, int *py) {
+    if (px == 0 || py == 0) {
+        return;
+    }
+    int temp = *px;
+    *px = *py;
+    *py = temp;
+}
+
+int main() {
+	printf("20251310_WaiYanNaung\n\n");
+	int x = 3, y = 5;
+	printf("Before swap: x = %d, y = %d\n", x, y);
+	swap(&x, &y);
+    printf("After swap: x = %d, y = %d\n", x, y);
+    return 0;
+}

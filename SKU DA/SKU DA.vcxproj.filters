@@ -72,5 +72,8 @@
     <ClCompile Include="Report_4_30.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="18_doubleLinkedList.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
